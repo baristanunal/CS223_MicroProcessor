@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Dec 28 10:37:37 2021
+# Process ID: 10132
+# Current directory: C:/Users/hasan/Desktop/cs223Project/cs223Project_v2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11284 C:\Users\hasan\Desktop\cs223Project\cs223Project_v2\cs223Project_v2.xpr
+# Log file: C:/Users/hasan/Desktop/cs223Project/cs223Project_v2/vivado.log
+# Journal file: C:/Users/hasan/Desktop/cs223Project/cs223Project_v2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hasan/Desktop/cs223Project/cs223Project_v2/cs223Project_v2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source DataPath_testbench.tcl
+close_sim
+launch_simulation
+source DataPath_testbench.tcl
+close_sim
+launch_simulation
+source DataPath_testbench.tcl
+close_sim
+launch_simulation
+source DataPath_testbench.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/hasan/Desktop/cs223Project/cs223Project_v2/cs223Project_v2.srcs/sim_1/new/Mp_testbench.sv w ]
+add_files -fileset sim_1 C:/Users/hasan/Desktop/cs223Project/cs223Project_v2/cs223Project_v2.srcs/sim_1/new/Mp_testbench.sv
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MicroProcessor [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+set_property top Mp_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+close_project
+open_project C:/Users/hasan/Desktop/cs223Project/cs223Project_v2/cs223Project_v2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Mp_testbench.tcl
+close_sim
